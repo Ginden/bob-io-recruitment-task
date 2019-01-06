@@ -28,3 +28,6 @@ Example request made with curl:
 curl -X POST http://localhost:40718/closest -d '{"lat": 50, "lng": 20}' -H "Content-Type: application/json"
 ```
 
+### Running tests
+
+`npm test`

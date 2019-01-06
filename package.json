@@ -2,9 +2,9 @@
   "name": "bob-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "nyc mocha",
+    "test": "nyc mocha --recursive test/",
     "build": "docker-compose up"
   },
   "keywords": [],
@@ -18,10 +18,13 @@
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-chai-expect": "^2.0.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-mocha": "^5.2.0",
     "eslint-plugin-react": "^7.12.3",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"
