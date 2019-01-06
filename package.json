@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "nyc mocha --recursive test/",
-    "build": "docker-compose up"
+    "build": "docker-compose up",
+    "lint": "eslint lib test"
   },
   "keywords": [],
   "author": "Michał Wadas <michalwadas@gmail.com>",
@@ -27,6 +28,7 @@
     "eslint-plugin-mocha": "^5.2.0",
     "eslint-plugin-react": "^7.12.3",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0"
+    "nyc": "^13.1.0",
+    "sinon": "^7.2.2"
   }
 }
