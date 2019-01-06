@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha",
+    "build": "docker-compose up"
   },
   "keywords": [],
   "author": "Michał Wadas <michalwadas@gmail.com>",
@@ -22,6 +23,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
   }
 }
